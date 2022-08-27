@@ -1,0 +1,8 @@
+<div>
+    <h3>{{ cart?.userName }}</h3>
+    <app-shopping-cart-item 
+        *ngFor="let cartItem of cart?.items" 
+        [cartItem]="cartItem" 
+        (onRemoveCartItem)="removeCartItem(cartItem)">
+    </app-shopping-cart-item>
+</div>
